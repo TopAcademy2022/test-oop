@@ -1,10 +1,10 @@
 ﻿#include <iostream>
-#include "transport.h"
+#include "car.h"
 
 int main()
 {
     setlocale(0, "ru");
 
-    Transport mashina = Transport();
+    Car mashina = Car();
     mashina.Print();
 }

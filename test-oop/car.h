@@ -7,4 +7,3 @@ class Car : public Transport
 {
 
 };
-
