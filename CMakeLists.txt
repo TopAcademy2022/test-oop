@@ -8,6 +8,9 @@ set(
 
 	test-oop/car.h
 	test-oop/car.cpp
+
+	test-oop/transport.h
+	test-oop/transport.cpp
 )
 
 add_executable(TestOOP ${CORE})
