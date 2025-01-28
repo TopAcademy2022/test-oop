@@ -11,8 +11,7 @@ protected:
 public:
 	Transport(unsigned int speed);
 
-	void Print();
+	virtual void Print();
 
 	unsigned int GetSpeed();
 };
-
