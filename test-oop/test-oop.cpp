@@ -1,13 +1,24 @@
 ﻿#include <iostream>
-#include "car.h"
+#include <filesystem>
+namespace fs = std::filesystem;
+using namespace std;
 
 int main()
 {
     setlocale(0, "ru");
 
-    // Static method
-    //Car::PrintTravelDistance(70, 2);
+    const fs::path myPath = "./";
 
-    Car mashina = Car(80);
-    mashina.Print();
+    // Print
+    for (auto const& dir_entry : std::filesystem::directory_iterator{ myPath })
+    {
+        std::cout << dir_entry.path() << '\n';
+    }
+
+    // Create dir
+    fs::create_directory(myPath.relative_path().append("build"));
+
+    // Remove
+    const fs::path myPath2 = "./build";
+    fs::remove(myPath2);
 }
