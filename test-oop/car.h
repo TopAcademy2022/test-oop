@@ -5,5 +5,6 @@
 
 class Car : public Transport
 {
-
+public:
+	void SetSpeed(unsigned int newSpeed);
 };

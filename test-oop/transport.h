@@ -5,12 +5,14 @@
 
 class Transport
 {
-private:
+protected:
 	unsigned int speed;
 
 public:
 	Transport();
 
 	void Print();
+
+	unsigned int GetSpeed();
 };
 

@@ -9,3 +9,8 @@ void Transport::Print()
 {
 	std::cout << "Speed: " << this->speed << std::endl;
 }
+
+unsigned int Transport::GetSpeed()
+{
+	return this->speed;
+}
