@@ -138,6 +138,7 @@
     <ClInclude Include="tank.h" />
     <ClInclude Include="transport.h" />
     <ClInclude Include="tree.h" />
+    <ClInclude Include="Vis.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
