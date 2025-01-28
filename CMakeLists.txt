@@ -5,6 +5,9 @@ project(TestOOP VERSION 0.0.1 LANGUAGES CXX)
 set(
     CORE
         test-oop/test-oop.cpp
+
+	test-oop/car.h
+	test-oop/car.cpp
 )
 
 add_executable(TestOOP ${CORE})

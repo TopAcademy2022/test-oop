@@ -10,4 +10,5 @@ int main()
 
     Car mashina = Car(80);
     mashina.Print();
+    system("sleep");
 }
