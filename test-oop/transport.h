@@ -9,7 +9,7 @@ protected:
 	unsigned int speed;
 
 public:
-	Transport();
+	Transport(unsigned int speed);
 
 	void Print();
 

@@ -1,8 +1,8 @@
 #include "transport.h"
 
-Transport::Transport()
+Transport::Transport(unsigned int speed)
 {
-	this->speed = 100;
+	this->speed = speed;
 }
 
 void Transport::Print()

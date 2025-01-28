@@ -5,6 +5,6 @@ int main()
 {
     setlocale(0, "ru");
 
-    Car mashina = Car();
+    Car mashina = Car(80);
     mashina.Print();
 }
