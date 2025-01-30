@@ -7,7 +7,7 @@ int main()
 {
     setlocale(0, "ru");
 
-    const fs::path myPath = "./";
+    const fs::path myPath = "./ttr";
 
     try
     {
@@ -26,6 +26,6 @@ int main()
     }
     catch (std::exception ex)
     {
-        std::cout << "Error: dir not exist" << std::endl;
+        std::cout << "Error: dir not exist. System error: " << ex.what() << std::endl;
     }
 }
