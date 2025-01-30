@@ -9,16 +9,23 @@ int main()
 
     const fs::path myPath = "./";
 
-    // Print
-    for (auto const& dir_entry : std::filesystem::directory_iterator{ myPath })
+    try
     {
-        std::cout << dir_entry.path() << '\n';
+        // Print
+        for (auto const& dir_entry : std::filesystem::directory_iterator{ myPath })
+        {
+            std::cout << dir_entry.path() << '\n';
+        }
+
+        // Create dir
+        fs::create_directory(myPath.relative_path().append("build"));
+
+        // Remove
+        const fs::path myPath2 = "./build";
+        fs::remove(myPath2);
     }
-
-    // Create dir
-    fs::create_directory(myPath.relative_path().append("build"));
-
-    // Remove
-    const fs::path myPath2 = "./build";
-    fs::remove(myPath2);
+    catch (std::exception ex)
+    {
+        std::cout << "Error: dir not exist" << std::endl;
+    }
 }
